@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Motion graphics plan",
+  "type": "object",
+  "required": [
+    "source",
+    "fps",
+    "width",
+    "height",
+    "durationMs",
+    "graphics"
+  ],
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "Absolute path to the source video."
+    },
+    "fps": {
+      "type": "number"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "durationMs": {
+      "type": "integer",
+      "description": "Full duration of the source video in ms. The renderer uses this so the output covers the whole video, not just up to the last graphic. Take it from frames.json."
+    },
+    "graphics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "template",
+          "startMs",
+          "endMs",
+          "anchor",
+          "props"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "template": {
+            "type": "string",
+            "enum": [
+              "keyword-pop",
+              "number-counter",
+              "list-builder",
+              "lower-third",
+              "chapter-card",
+              "tool-chip"
+            ]
+          },
+          "startMs": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endMs": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "anchor": {
+            "type": "string",
+            "enum": [
+              "top-left",
+              "top-center",
+              "top-right",
+              "mid-left",
+              "center",
+              "mid-right",
+              "bottom-left",
+              "bottom-center",
+              "bottom-right"
+            ]
+          },
+          "anchorWordMs": {
+            "type": "integer",
+            "description": "When the word this graphic belongs to is spoken. Used to check that the graphic leads the word rather than trailing it."
+          },
+          "note": {
+            "type": "string",
+            "description": "The line of transcript this came from. For the review table; ignored by the renderer."
+          },
+          "props": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

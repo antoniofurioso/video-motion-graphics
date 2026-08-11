@@ -1,0 +1,97 @@
+{
+  "source": "/Users/antonio/Movies/talk-warsaw.mp4",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationMs": 94000,
+  "graphics": [
+    {
+      "id": "g1",
+      "template": "lower-third",
+      "startMs": 3200,
+      "endMs": 6400,
+      "anchor": "bottom-left",
+      "note": "opening, speaker framed right",
+      "props": {
+        "name": "Antonio Furioso",
+        "role": "Inbound growth systems"
+      }
+    },
+    {
+      "id": "g2",
+      "template": "keyword-pop",
+      "startMs": 14100,
+      "endMs": 15500,
+      "anchor": "top-right",
+      "anchorWordMs": 14220,
+      "note": "\"...what I call warm gravity...\"",
+      "props": {
+        "text": "warm gravity"
+      }
+    },
+    {
+      "id": "g3",
+      "template": "list-builder",
+      "startMs": 27800,
+      "endMs": 34200,
+      "anchor": "mid-right",
+      "anchorWordMs": 27950,
+      "note": "\"three things have to be true...\"",
+      "props": {
+        "items": [
+          {
+            "text": "They already know you",
+            "atMs": 28600
+          },
+          {
+            "text": "They have the problem now",
+            "atMs": 30900
+          },
+          {
+            "text": "You can prove it worked",
+            "atMs": 33100
+          }
+        ]
+      }
+    },
+    {
+      "id": "g4",
+      "template": "chapter-card",
+      "startMs": 37400,
+      "endMs": 39500,
+      "anchor": "center",
+      "anchorWordMs": 37500,
+      "note": "1.2s pause, then \"so here's the thing\"",
+      "props": {
+        "index": 2,
+        "title": "Chase the opposite"
+      }
+    },
+    {
+      "id": "g5",
+      "template": "number-counter",
+      "startMs": 44420,
+      "endMs": 46620,
+      "anchor": "top-right",
+      "anchorWordMs": 44520,
+      "note": "\"...a 340 percent lift from doing the opposite\"",
+      "props": {
+        "value": 340,
+        "suffix": "%",
+        "label": "lift in replies"
+      }
+    },
+    {
+      "id": "g6",
+      "template": "tool-chip",
+      "startMs": 61400,
+      "endMs": 63000,
+      "anchor": "bottom-right",
+      "anchorWordMs": 61500,
+      "note": "first mention of the tool",
+      "props": {
+        "text": "Cloudflare R2"
+      }
+    }
+  ]
+}
